@@ -1,0 +1,20 @@
+/* header section */
+#game-description {
+    font-size: 30px;
+    text-align: center;
+    color: black;
+    margin-top: 10%;
+}
+
+.start-button {
+    display: block;
+    margin-top: 20%;
+}
+
+.row {
+    padding: 0 20% 0 20%;
+}
+
+.answer {
+    text-align: center;
+}
