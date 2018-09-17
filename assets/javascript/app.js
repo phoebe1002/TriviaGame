@@ -2,9 +2,9 @@
 // create a variable to store data that will display in .game-content div
 var gameDisplay;
 // create a variable to hold a div with class name start-button to display a start button
-var startButton = '<button type="button" class="btn btn-success btn-block start-button">Start</button>';
+var startButton = '<button type="button" class="btn btn-info btn-block start-button">Start</button>';
 // create a variable to hold a div with class name reset-button to display a reset button
-var resetButton = '<button type="button" class="btn btn-info btn-block reset-button">Replay</button>';
+var resetButton = '<button type="button" class="btn btn-success btn-block reset-button">Replay</button>';
 // create a variable to store time rules
 var timeState;
 // use triviaTimer to set timer for each quesiton
@@ -187,20 +187,20 @@ function gameSummary() {
 
 	var congratImage = "https://media.giphy.com/media/wp2cqPc30XSso/giphy.gif";
 
-	var encourageImage = "https://media.giphy.com/media/QcOUgtiPUGELK/giphy.gif";
+	var encourageImage = "https://media.giphy.com/media/zBQ97IopZv1du/giphy.gif";
 
  	if(score >= 70){
 		message = "<p class='text-center'>You score is " + score + "% <br>Well Done!</p>";
 		showImage = "<img class='rounded mx-auto d-block' src='"+ congratImage + "'>";
 	} else {
 		message = "<p class='text-center'>You score is " + score + "<br>Nice try!</p>";
-		showImage = "<img class='rounded mx-auto d-block' src='"+ encourageImage + "'>";
+		showImage = "<img class='rounded mx-auto d-block' id='adjust-img' src='"+ encourageImage + "'>";
 	}
 	var correctCount = '<li>'+ correctTally + ' correct answer(s)</li>';
 	var incorrectCount = '<li>'+ incorrectTally + ' wrong answer(s)</li>';
 	var missedCount = '<li>'+ missedTally + ' missed answer(s)</li>';
 	
-	var gameReport = "<div class='text-center'> Here is your result:"  + correctCount + incorrectCount + missedCount +'</div><br>'
+	var gameReport = "<div class='text-center'> Here is your result:<br>"  + correctCount + incorrectCount + missedCount +'</div><br>'
 
 	gameDisplay = message + gameReport + showImage + resetButton;
 

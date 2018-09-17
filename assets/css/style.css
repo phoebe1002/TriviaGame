@@ -3,13 +3,14 @@
     font-size: 30px;
     text-align: center;
     color: black;
-    margin-top: 10%;
+    margin-top: 40px;
 }
 
 /* general */
 .text-center{
     padding: 20px;
     font-size: 18px;
+    line-height: 1.6;
 }
 
 /* game intro */
@@ -19,6 +20,9 @@
 }
 
 /* game content */
+.container {
+    font-size: 18px;
+}
 .row {
     padding: 0 20% 0 20%;
 }
@@ -53,6 +57,13 @@ img {
 .text-center 
 li {
     list-style: square;
+    color: #4682B4;
+    padding: 5px;
+}
+
+#adjust-img {
+    width: 30%;
+    height: auto;
 }
 
 /* media queries */
@@ -67,7 +78,6 @@ li {
         height: auto;
     }
     
-  
 }
   /* 768px max-width media query  */
   @media screen and (max-width: 768px) {
@@ -92,6 +102,11 @@ li {
 
     button {
         padding: 0;
+        width: 100%;
+        height: auto;
+    }
+
+    #adjust-img {
         width: 100%;
         height: auto;
     }
