@@ -95,6 +95,10 @@ li {
         padding: 20px 0 768px 0;
     }
 
+    .row {
+        padding: 0;
+    }
+    
     img {
         width: 100%;
         height: auto;
@@ -107,7 +111,7 @@ li {
     }
 
     #adjust-img {
-        width: 100%;
+        width: 50%;
         height: auto;
     }
   }
