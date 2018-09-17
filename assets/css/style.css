@@ -6,15 +6,94 @@
     margin-top: 10%;
 }
 
+/* general */
+.text-center{
+    padding: 20px;
+    font-size: 18px;
+}
+
+/* game intro */
 .start-button {
     display: block;
     margin-top: 20%;
 }
 
+/* game content */
 .row {
     padding: 0 20% 0 20%;
 }
 
-.answer {
-    text-align: center;
+#background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    left: 0px;
+    top: 0px;
 }
+
+#question-holder {
+    font-size: 20px;
+    font-weight: bold;
+    background: -webkit-linear-gradient(#eee,#4682B4);
+    padding: 10px;
+}
+
+.selector:hover{
+    background-color: yellow;
+}
+
+img {
+    width: 400px;
+    height: auto;
+    margin: auto;
+}
+
+/* game summary */
+.text-center 
+li {
+    list-style: square;
+}
+
+/* media queries */
+
+/* 980px max-width media query  */
+@media screen and (max-width: 980px){
+    .container {
+        font-size: 2rem;
+    }
+    img {
+        width: 80%;
+        height: auto;
+    }
+    
+  
+}
+  /* 768px max-width media query  */
+  @media screen and (max-width: 768px) {
+    #game-description {
+        font-size: 20px;
+        color: white;
+        margin: 0;
+        background: -webkit-linear-gradient(#eee,#4682B4);
+        padding: 10px;
+    }
+
+    .container {
+        font-size: 1.3rem;
+        background: -webkit-linear-gradient(#eee, blue);
+        padding: 20px 0 768px 0;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    button {
+        padding: 0;
+        width: 100%;
+        height: auto;
+    }
+  }
+
