@@ -193,8 +193,8 @@ function gameSummary() {
 		message = "<p class='text-center'>You score is " + score + "% <br>Well Done!</p>";
 		showImage = "<img class='rounded mx-auto d-block' src='"+ congratImage + "'>";
 	} else {
-		message = "<p class='text-center'>You score is " + score + "<br>Nice try!</p>";
-		showImage = "<img class='rounded mx-auto d-block' id='adjust-img' src='"+ encourageImage + "'>";
+		message = "<p class='text-center'>You score is " + score + "% <br>Nice try!</p>";
+		showImage = "<img class='rounded mx-auto d-block' id='ajdust-img' src='"+ encourageImage + "'>";
 	}
 	var correctCount = '<li>'+ correctTally + ' correct answer(s)</li>';
 	var incorrectCount = '<li>'+ incorrectTally + ' wrong answer(s)</li>';
